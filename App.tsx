@@ -53,8 +53,6 @@ export default function Page() {
 
     let newData = [];
     json.forEach((item) => {
-      console.log(item);
-      console.log(item.body);
       newData.push({
         ...item,
         text: item.body == null ? '' : item.body.en.substr(0, 50) + '...',
